@@ -1,8 +1,7 @@
-resource "google_storage_bucket" "bucket" {
-  name = "test-bucket-random-001122"
+resource "google_bigquery_dataset" "default" {
+  dataset_id                  = "teracheck1"
+  project                     = "terratest-328102"
+  friendly_name               = "people"
+  description                 = "Person informations"
+  location                    = "US"
 }
-
-resource "google_storage_bucket" "gcs_bucket" {
-  name = "test-bucket-random-001123"
-}
-
