@@ -5,3 +5,7 @@ resource "google_storage_bucket" "bucket" {
 resource "google_storage_bucket" "bucket2" {
   name = "terratesttwo"
 }
+
+resource "google_storage_bucket" "bucket3" {
+  name = "terratestthree"
+}
