@@ -17,3 +17,7 @@ resource "google_storage_bucket" "bucket4" {
 resource "google_storage_bucket" "bucket5" {
   name = "terratestfive"
 }
+
+resource "google_bigquery_dataset" "dataset1" {
+  dataset_id                  = "teracheck1"
+}
