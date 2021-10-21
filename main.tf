@@ -1,3 +1,5 @@
+#...................................Bucket creation..........................................
+
 resource "google_storage_bucket" "bucket" {
   name = "terratestone"
 }
@@ -5,6 +7,8 @@ resource "google_storage_bucket" "bucket" {
 resource "google_storage_bucket" "bucket2" {
   name = "terratesttwo"
 }
+
+#..................................Daataset creation.........................................
 
 resource "google_bigquery_dataset" "dataset" {
   dataset_id                  = "example_dataset"
@@ -33,6 +37,18 @@ resource "google_bigquery_dataset" "dataset1" {
 resource "google_bigquery_dataset" "dataset2" {
   dataset_id                  = "example_dataset2"
   friendly_name               = "test2"
+  description                 = "This is a test description"
+  location                    = "EU"
+  default_table_expiration_ms = 3600000
+
+  labels = {
+    env = "default"
+  }
+}
+
+resource "google_bigquery_dataset" "dataset3" {
+  dataset_id                  = "example_dataset3"
+  friendly_name               = "test3"
   description                 = "This is a test description"
   location                    = "EU"
   default_table_expiration_ms = 3600000
