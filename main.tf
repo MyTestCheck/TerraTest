@@ -30,9 +30,9 @@ resource "google_bigquery_dataset" "dataset1" {
   }
 }
 
-resource "google_bigquery_dataset" "dataset1" {
-  dataset_id                  = "example_dataset1"
-  friendly_name               = "test1"
+resource "google_bigquery_dataset" "dataset2" {
+  dataset_id                  = "example_dataset2"
+  friendly_name               = "test2"
   description                 = "This is a test description"
   location                    = "EU"
   default_table_expiration_ms = "never"
