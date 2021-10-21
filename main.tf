@@ -35,8 +35,6 @@ resource "google_bigquery_dataset" "dataset2" {
   friendly_name               = "test2"
   description                 = "This is a test description"
   location                    = "EU"
-  default_table_expiration_ms = "never"
-
   labels = {
     env = "default"
   }
