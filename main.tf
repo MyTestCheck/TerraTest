@@ -1,4 +1,4 @@
-#...................................Bucket creation..........................................
+#...................................Buckets....................................................
 
 resource "google_storage_bucket" "bucket" {
   name = "terratestone"
@@ -8,7 +8,7 @@ resource "google_storage_bucket" "bucket2" {
   name = "terratesttwo"
 }
 
-#..................................Daataset creation.........................................
+#..................................Datasets....................................................
 
 resource "google_bigquery_dataset" "dataset" {
   dataset_id                  = "example_dataset"
@@ -58,4 +58,11 @@ resource "google_bigquery_dataset" "dataset3" {
   }
 }
 
+
+#.............................................Tables............................................
+
+resource "google_bigquery_table" "default" {
+  dataset_id = "example_dataset3"
+  table_id   = "example_table3"
+}
 
