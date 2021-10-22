@@ -58,6 +58,18 @@ resource "google_bigquery_dataset" "dataset3" {
   }
 }
 
+resource "google_bigquery_dataset" "dataset4" {
+  dataset_id                  = "example_dataset4"
+  friendly_name               = "test4"
+  description                 = "This is a test description"
+  location                    = "EU"
+  default_table_expiration_ms = 36000000
+
+  labels = {
+    env = "default"
+  }
+}
+
 
 #.............................................Tables............................................
 
