@@ -14,6 +14,11 @@ resource "google_bigquery_dataset" "dataset1" {
   dataset_id = "dataset_one"
 }
 
+resource "google_bigquery_dataset" "dataset2" {
+  dataset_id = "dataset_two"
+}
+
+
 #....................................Tables............................................
 
 resource "google_bigquery_table" "table1" {
