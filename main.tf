@@ -8,13 +8,13 @@ resource "google_storage_bucket" "bucket2" {
   name = "terratesttwo"
 }
 
-#..................................Datasets....................................................
+#...................................Datasets....................................................
 
 resource "google_bigquery_dataset" "dataset1" {
   dataset_id = "dataset_one"
 }
 
-#.............................................Tables............................................
+#....................................Tables............................................
 
 resource "google_bigquery_table" "table1" {
   dataset_id = "dataset_one"
