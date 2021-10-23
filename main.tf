@@ -16,5 +16,10 @@ resource "google_bigquery_dataset" "dataset1" {
 
 #.............................................Tables............................................
 
+resource "google_bigquery_table" "table1" {
+  dataset_id = "dataset_one"
+  table_id   = "table_one"
+  deletion_protection = false
+}
 
 
