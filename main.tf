@@ -34,47 +34,17 @@ resource "google_bigquery_dataset" "dataset1" {
   }
 }
 
-resource "google_bigquery_dataset" "dataset2" {
-  dataset_id                  = "example_dataset2"
-  friendly_name               = "test2"
-  description                 = "This is a test description"
-  location                    = "EU"
-  default_table_expiration_ms = 3600000
 
-  labels = {
-    env = "default"
-  }
-}
 
-resource "google_bigquery_dataset" "dataset3" {
-  dataset_id                  = "example_dataset3"
-  friendly_name               = "test3"
-  description                 = "This is a test description"
-  location                    = "EU"
-  default_table_expiration_ms = 3600000
 
-  labels = {
-    env = "default"
-  }
-}
 
-resource "google_bigquery_dataset" "dataset4" {
-  dataset_id                  = "example_dataset4"
-  friendly_name               = "test4"
-  description                 = "This is a test description"
-  location                    = "EU"
-  default_table_expiration_ms = 36000000
 
-  labels = {
-    env = "default"
-  }
-}
 
 
 #.............................................Tables............................................
 
 resource "google_bigquery_table" "default" {
-  dataset_id = "example_dataset3"
-  table_id   = "example_table3"
+  dataset_id = "example_dataset1"
+  table_id   = "example_table1"
 }
 
