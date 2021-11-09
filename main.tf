@@ -2,10 +2,12 @@
 
 resource "google_storage_bucket" "bucket" {
   name = "terratestone"
+  location = "us"
 }
 
 resource "google_storage_bucket" "bucket2" {
   name = "terratesttwo"
+  location = "us"
 }
 
 #...................................Datasets....................................................
