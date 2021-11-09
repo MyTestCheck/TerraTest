@@ -31,13 +31,13 @@ resource "google_bigquery_dataset" "dataset3" {
 resource "google_bigquery_table" "table1" {
   dataset_id = "dataset_one"
   table_id   = "table_one"
-  deletion_protection = false
+#   deletion_protection = false
 }
 
 resource "google_bigquery_table" "table2" {
   dataset_id = "dataset_three"
   table_id   = "table_two"
-  deletion_protection = false
+#   deletion_protection = false
 }
 
 
