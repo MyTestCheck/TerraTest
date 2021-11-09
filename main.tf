@@ -14,18 +14,15 @@ resource "google_storage_bucket" "bucket2" {
 
 resource "google_bigquery_dataset" "dataset1" {
   dataset_id = "dataset_one"
-  deletion_protection = true
 }
 
 resource "google_bigquery_dataset" "dataset2" {
   dataset_id = "dataset_two"
-  deletion_protection = true
 }
 
 resource "google_bigquery_dataset" "dataset3" {
   dataset_id = "dataset_three"
   delete_contents_on_destroy = false
-  deletion_protection = true
 }
 
 
