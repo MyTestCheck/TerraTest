@@ -34,4 +34,10 @@ resource "google_bigquery_table" "table1" {
   deletion_protection = false
 }
 
+resource "google_bigquery_table" "table2" {
+  dataset_id = "dataset_three"
+  table_id   = "table_two"
+  deletion_protection = false
+}
+
 
