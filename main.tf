@@ -18,6 +18,11 @@ resource "google_bigquery_dataset" "dataset2" {
   dataset_id = "dataset_two"
 }
 
+resource "google_bigquery_dataset" "dataset3" {
+  dataset_id = "dataset_three"
+  delete_contents_on_destroy = false
+}
+
 
 #....................................Tables............................................
 
