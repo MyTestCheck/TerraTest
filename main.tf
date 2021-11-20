@@ -10,7 +10,7 @@ resource "google_storage_bucket" "bucket2" {
    location = "us"
 }
 
-# #...................................Datasets....................................................
+#...................................Datasets....................................................
 
 resource "google_bigquery_dataset" "dataset1" {
    dataset_id = "dataset_one"
@@ -20,13 +20,13 @@ resource "google_bigquery_dataset" "dataset2" {
    dataset_id = "dataset_two"
 }
 
-# resource "google_bigquery_dataset" "dataset3" {
-#   dataset_id = "dataset_three"
-#   delete_contents_on_destroy = false
-# }
+ resource "google_bigquery_dataset" "dataset3" {
+   dataset_id = "dataset_three"
+   delete_contents_on_destroy = false
+ }
 
 
-# #....................................Tables............................................
+#....................................Tables............................................
 
 # resource "google_bigquery_table" "table1" {
 #   dataset_id = "dataset_one"
