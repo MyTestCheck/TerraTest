@@ -13,7 +13,7 @@ resource "google_storage_bucket" "bucket2" {
 #...................................Datasets....................................................
 
 resource "google_bigquery_dataset" "datasets" {
-   dataset_id = var.dataset_id
+   dataset_id = var.datasets
 }
 
 
