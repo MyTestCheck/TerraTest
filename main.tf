@@ -12,18 +12,12 @@ resource "google_storage_bucket" "bucket2" {
 
 #...................................Datasets....................................................
 
-resource "google_bigquery_dataset" "dataset1" {
-   dataset_id = "dataset_one"
+resource "google_bigquery_dataset" "datasets" {
+   for_each   = {for dataset in var.datasets : dataset.dataset_id => dataset}
+   dataset_id = each.value.dataset_id
 }
 
-resource "google_bigquery_dataset" "dataset2" {
-   dataset_id = "dataset_two"
-}
 
- resource "google_bigquery_dataset" "dataset3" {
-   dataset_id = "dataset_three"
-   delete_contents_on_destroy = false
- }
 
 
 #....................................Tables............................................
