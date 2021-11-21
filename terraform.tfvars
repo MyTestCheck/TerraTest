@@ -3,5 +3,8 @@ region     = "europe-west2"
 datasets = [
     {
         dataset_id= "dataset11"
+    },
+    {
+        dataset_id= "dataset12"
     }
 ]
