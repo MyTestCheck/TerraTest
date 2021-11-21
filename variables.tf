@@ -7,3 +7,10 @@ variable "region" {
   type    = string
   default = "europe-west2"
 }
+
+variable "datasets" {
+  type = list(object({
+    dataset_id = string
+  }))
+  default = []
+}
