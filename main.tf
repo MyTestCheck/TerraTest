@@ -13,7 +13,8 @@ resource "google_storage_bucket" "bucket2" {
 #...................................Datasets....................................................
 
 resource "google_bigquery_dataset" "datasets" {
-   dataset_id = var.datasets
+   for_each   = {for dataset in var.datasets : dataset.dataset_id => dataset}
+   dataset_id = each.value.dataset_id
 }
 
 
