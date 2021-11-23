@@ -1,6 +1,6 @@
 buckets = [
     {
-        name = "terratestone"
+        name = "buck1"
         location = "us"
     }
 ]
