@@ -15,3 +15,10 @@ variable "datasets" {
   }))
   default = []
 }
+
+variable "buckets" {
+  type = list(object({
+    name = string
+    location = string
+  }))
+}

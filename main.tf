@@ -1,13 +1,12 @@
+# Don't make any changes in this file
+# To create dataset, go to datasets.tfvars file
+# To create buckets, go to buckets.tfvars file
+
 #...................................Buckets....................................................
 
 resource "google_storage_bucket" "bucket" {
   name = "terratestone"
   location = "us"
-}
-
-resource "google_storage_bucket" "bucket2" {
-   name = "terratesttwo"
-   location = "us"
 }
 
 #...................................Datasets....................................................
@@ -17,9 +16,6 @@ resource "google_bigquery_dataset" "datasets" {
    dataset_id = each.value.dataset_id
    description = each.value.description
 }
-
-
-
 
 #....................................Tables............................................
 
