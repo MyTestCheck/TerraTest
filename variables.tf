@@ -34,7 +34,7 @@ variable "tables" {
 
 variable "vm_instances" {
   type = list(object({
-    name = string
+    instance_name = string
     machine_type = string
   }))
 }
