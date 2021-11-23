@@ -5,8 +5,9 @@
 #...................................Buckets....................................................
 
 resource "google_storage_bucket" "bucket" {
-  name = "terratestone"
-  location = "us"
+  for_each = {for bucket in var.buckets : bucket.name => bucket}
+  name = each.value.name
+  location = each.value.location
 }
 
 #...................................Datasets....................................................
