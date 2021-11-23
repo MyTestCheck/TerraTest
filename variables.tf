@@ -21,4 +21,5 @@ variable "buckets" {
     name = string
     location = string
   }))
+  default = []
 }

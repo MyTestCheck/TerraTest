@@ -26,10 +26,3 @@ resource "google_bigquery_dataset" "datasets" {
 #   deletion_protection = true
 # }
 
-# resource "google_bigquery_table" "table2" {
-#   dataset_id = "dataset_three"
-#   table_id   = "table_two"
-#   deletion_protection = true
-# }
-
-
