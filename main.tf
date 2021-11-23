@@ -19,9 +19,10 @@ resource "google_bigquery_table" "tables" {
    table_id   = each.value.table_id
 }
 
-resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
-  machine_type = "f1-micro"
+resource "google_compute_instance" "vm_instances" {
+   for_each = {for vm_instance in vm_instances : vm_instance.name => vm_instance}
+   name         = each.value.name
+   machine_type = each.value.machine_type
 
   boot_disk {
     initialize_params {

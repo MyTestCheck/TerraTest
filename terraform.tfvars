@@ -39,3 +39,8 @@ tables = [
         table_id   = "table11"
     }
 ]
+
+vm_instances = [
+    name = "testsun"
+    machine_type = "e2-medium"
+]
