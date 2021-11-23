@@ -1,8 +1,5 @@
 # Don't make any changes in this file
-# To create dataset, go to datasets.tfvars file
-# To create buckets, go to buckets.tfvars file
-
-#...................................Buckets....................................................
+# To create anything, go to terraform.tfvars file
 
 resource "google_storage_bucket" "buckets" {
   for_each = {for bucket in var.buckets : bucket.name => bucket}
@@ -10,15 +7,11 @@ resource "google_storage_bucket" "buckets" {
   location = each.value.location
 }
 
-#...................................Datasets....................................................
-
 resource "google_bigquery_dataset" "datasets" {
    for_each   = {for dataset in var.datasets : dataset.dataset_id => dataset}
    dataset_id = each.value.dataset_id
    description = each.value.description
 }
-
-#....................................Tables............................................
 
 # resource "google_bigquery_table" "table1" {
 #   dataset_id = "dataset_one"
