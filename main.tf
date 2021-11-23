@@ -4,7 +4,7 @@
 
 #...................................Buckets....................................................
 
-resource "google_storage_bucket" "bucket" {
+resource "google_storage_bucket" "buckets" {
   for_each = {for bucket in var.buckets : bucket.name => bucket}
   name = each.value.name
   location = each.value.location
