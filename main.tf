@@ -13,9 +13,9 @@ resource "google_bigquery_dataset" "datasets" {
    description = each.value.description
 }
 
-# resource "google_bigquery_table" "table1" {
-#   dataset_id = "dataset_one"
-#   table_id   = "table_one"
-#   deletion_protection = true
-# }
+resource "google_bigquery_table" "tables" {
+   for_each = {for table in var.tables : table.table_id => table}
+   dataset_id = each.value.dataset_id
+   table_id   = each.value.table_id
+}
 
