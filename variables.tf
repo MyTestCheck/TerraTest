@@ -11,6 +11,7 @@ variable "region" {
 variable "datasets" {
   type = list(object({
     dataset_id = string
+    description = string
   }))
   default = []
 }
