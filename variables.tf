@@ -8,6 +8,14 @@ variable "region" {
   default = "europe-west2"
 }
 
+variable "buckets" {
+  type = list(object({
+    name = string
+    location = string
+  }))
+  default = []
+}
+
 variable "datasets" {
   type = list(object({
     dataset_id = string
@@ -16,10 +24,10 @@ variable "datasets" {
   default = []
 }
 
-variable "buckets" {
+variable "tables" {
   type = list(object({
-    name = string
-    location = string
+    dataset_id = string
+    table_id   = string
   }))
   default = []
 }

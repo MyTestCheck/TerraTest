@@ -28,3 +28,10 @@ datasets = [
         description = "This is description"
     }
 ]
+
+tables = [
+    {
+        dataset_id = "dataset11"
+        table_id   = "table11"
+    }
+]
