@@ -40,7 +40,9 @@ tables = [
     }
 ]
 
-vm_instances = [
-    name = "testsun"
-    machine_type = "e2-medium"
+vm_instances = [ 
+    {
+        name = "testsun"
+        machine_type = "e2-medium"
+    }
 ]
