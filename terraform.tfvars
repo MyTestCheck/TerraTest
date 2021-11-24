@@ -45,5 +45,6 @@ vm_instances = [
         name = "testsun"
         machine_type = "e2-medium"
         image = "debian-cloud/debian-9"
+        network = "default"
     }
 ]

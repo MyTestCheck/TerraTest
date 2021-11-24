@@ -37,6 +37,7 @@ variable "vm_instances" {
     name = string
     machine_type = string
     image = string
+    network = string
   }))
   default = []
 }
