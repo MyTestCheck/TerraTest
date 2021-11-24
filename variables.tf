@@ -37,4 +37,5 @@ variable "vm_instances" {
     name = string
     machine_type = string
   }))
+  default = []
 }
