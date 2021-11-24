@@ -30,10 +30,6 @@ datasets = [
     {
         dataset_id= "dataset14"
         description = "This is description"
-    },
-    {
-        dataset_id= "dataset15"
-        description = "This is description"
     }
 ]
 
