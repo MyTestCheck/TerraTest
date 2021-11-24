@@ -20,8 +20,8 @@ resource "google_bigquery_table" "tables" {
 }
 
 resource "google_compute_instance" "vm_instances" {
-   for_each = {for vm_instance in vm_instances : vm_instance.instance_name => vm_instance}
-   name         = each.value.instance_name
+   for_each = {for vm_instance in vm_instances : vm_instance.machine_type=> vm_instance}
+   name         = each.value.name
    machine_type = each.value.machine_type
 
   boot_disk {
