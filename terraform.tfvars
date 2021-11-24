@@ -49,7 +49,7 @@ vm_instances = [
     },
     {
         name = "testsun2"
-        machine_type = "e2-medium"
+        machine_type = "f1-micro"
         image = "debian-cloud/debian-9"
         network = "default"
     }
