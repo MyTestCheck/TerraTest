@@ -31,3 +31,13 @@ variable "tables" {
   }))
   default = []
 }
+
+// variable "vm_instances" {
+//   type = list(object({
+//     name = string
+//     machine_type = string
+//     image = string
+//     network = string
+//   }))
+//   default = []
+// }
