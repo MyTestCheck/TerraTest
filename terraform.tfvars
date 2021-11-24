@@ -40,17 +40,31 @@ tables = [
     }
 ]
 
-vm_instances = [ 
-    {
-        name = "testsun"
-        machine_type = "e2-medium"
-        image = "debian-cloud/debian-9"
-        network = "default"
-    },
-    {
-        name = "testsun2"
-        machine_type = "f1-micro"
-        image = "debian-cloud/debian-9"
-        network = "default"
-    }
-]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// vm_instances = [ 
+//     {
+//         name = "testsun"
+//         machine_type = "e2-medium"
+//         image = "debian-cloud/debian-9"
+//         network = "default"
+//     },
+//     {
+//         name = "testsun2"
+//         machine_type = "f1-micro"
+//         image = "debian-cloud/debian-9"
+//         network = "default"
+//     }
+// ]
