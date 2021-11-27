@@ -32,12 +32,15 @@ variable "tables" {
   default = []
 }
 
-// variable "vm_instances" {
-//   type = list(object({
-//     name = string
-//     machine_type = string
-//     image = string
-//     network = string
-//   }))
-//   default = []
-// }
+variable "vm_instances" {
+  type = list(object({
+    name = string
+    machine_type = string
+    region = string
+    zone = string
+    image = string
+    network = string
+  }))
+  default = []
+}
+
