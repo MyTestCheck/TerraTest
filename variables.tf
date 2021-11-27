@@ -1,3 +1,6 @@
+# Don't make any changes in this file
+# To create anything, go to terraform.tfvars file
+
 variable "project_id" {
   type        = string
   description = "The Google Cloud Project Id"
@@ -32,12 +35,32 @@ variable "tables" {
   default = []
 }
 
-// variable "vm_instances" {
-//   type = list(object({
-//     name = string
-//     machine_type = string
-//     image = string
-//     network = string
-//   }))
-//   default = []
-// }
+variable "db_instances" {
+  type = list(object({
+    name = string
+    region = string
+    database_version = string
+    tier = string
+    deletion_protection = string
+  }))
+  default = []
+}
+
+variable "databases" {
+  type = list(object({
+    name = string
+    instance = string
+  }))
+}
+
+variable "vm_instances" {
+  type = list(object({
+    name = string
+    machine_type = string
+    zone = string
+    image = string
+    network = string
+  }))
+  default = []
+}
+
