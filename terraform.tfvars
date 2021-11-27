@@ -44,8 +44,7 @@ vm_instances = [
     {
         name = "testsun"
         machine_type = "e2-medium"
-        zone = "us-central1 (Iowa)"
-        region = "us-central1-a"
+        zone = "us-central1-a"
         image = "debian-cloud/debian-9"
         network = "default"
     }
