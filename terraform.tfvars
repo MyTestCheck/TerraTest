@@ -33,6 +33,7 @@ datasets = [
     }
 ]
 
+# Use the below code to create tables
 tables = [
     {
         dataset_id = "dataset11"
@@ -40,30 +41,52 @@ tables = [
     }
 ]
 
+# Use the below code to create db instances
 
+db_instance = [
+    
+]
 
+# Refer example below
 
+// db_instances = [
+//     {
+//         name = "my-database-instance"
+//         region = "us-central1"
+//         database_version = "MYSQL_5_7"
+//         tier  = "db-f1-micro"
+//         deletion_protection  = "true"
+//     }
+// ]
 
+# Use the below code to create database in any instance
 
+databases = [
+    
+]
 
+# Refer example below
 
+// databases = [
+//     {
+//         name     = "my-database"
+//         instance = "my-database-instance"
+//     }
+// ]
 
+# Use the below code to create VMs
 
+vm_instance = [
+    
+]
 
-
-
-
+# Refer example below
 
 // vm_instances = [ 
 //     {
 //         name = "testsun"
 //         machine_type = "e2-medium"
-//         image = "debian-cloud/debian-9"
-//         network = "default"
-//     },
-//     {
-//         name = "testsun2"
-//         machine_type = "f1-micro"
+//         zone = "us-central1-a"
 //         image = "debian-cloud/debian-9"
 //         network = "default"
 //     }
