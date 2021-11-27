@@ -19,21 +19,21 @@ resource "google_bigquery_table" "tables" {
    table_id   = each.value.table_id
 }
 
-resource "google_compute_instance" "vm_instances" {
-   for_each = {for vm_instance in var.vm_instances : vm_instance.machine_type=> vm_instance}
-   name         = each.value.name
-   machine_type = each.value.machine_type
-   zone = each.value.zone
+// resource "google_compute_instance" "vm_instances" {
+//    for_each = {for vm_instance in var.vm_instances : vm_instance.machine_type=> vm_instance}
+//    name         = each.value.name
+//    machine_type = each.value.machine_type
+//    zone = each.value.zone
 
-  boot_disk {
-    initialize_params {
-      image = each.value.image
-    }
-  }
+//   boot_disk {
+//     initialize_params {
+//       image = each.value.image
+//     }
+//   }
 
-  network_interface {
-    network = each.value.network
-    access_config {
-    }
-  }
-}
+//   network_interface {
+//     network = each.value.network
+//     access_config {
+//     }
+//   }
+// }
