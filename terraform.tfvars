@@ -33,6 +33,7 @@ datasets = [
     }
 ]
 
+# Use the below code to create tables
 tables = [
     {
         dataset_id = "dataset11"
@@ -40,6 +41,7 @@ tables = [
     }
 ]
 
+# Use the below code to create db instances
 db_instances = [
     {
         name = "my-database-instance"
@@ -50,6 +52,7 @@ db_instances = [
     }
 ]
 
+# Use the below code to create database in any instance
 databases = [
     {
         name     = "my-database"
@@ -57,6 +60,7 @@ databases = [
     }
 ]
 
+# Use the below code to create VMs
 vm_instances = [ 
     {
         name = "testsun"

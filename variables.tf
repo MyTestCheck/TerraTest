@@ -1,3 +1,6 @@
+# Don't make any changes in this file
+# To create anything, go to terraform.tfvars file
+
 variable "project_id" {
   type        = string
   description = "The Google Cloud Project Id"
