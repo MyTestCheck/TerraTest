@@ -40,6 +40,23 @@ tables = [
     }
 ]
 
+db_instances = [
+    {
+        name = "my-database-instance"
+        region = "us-central1"
+        database_version = "MYSQL_5_7"
+        tier  = "db-f1-micro"
+        deletion_protection  = "true"
+    }
+]
+
+databases = [
+    {
+        name     = "my-database"
+        instance = "my-database-instance"
+    }
+]
+
 vm_instances = [ 
     {
         name = "testsun"

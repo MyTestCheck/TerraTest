@@ -32,6 +32,24 @@ variable "tables" {
   default = []
 }
 
+variable "db_instances" {
+  type = list(object({
+    name = string
+    region = string
+    database_version = string
+    tier = string
+    deletion_protection = string
+  }))
+  default = []
+}
+
+variable "databases" {
+  type = list(object({
+    name = string
+    instance = string
+  }))
+}
+
 variable "vm_instances" {
   type = list(object({
     name = string

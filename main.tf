@@ -19,6 +19,25 @@ resource "google_bigquery_table" "tables" {
    table_id   = each.value.table_id
 }
 
+resource "google_sql_database_instance" "db_instances" {
+   for_each = {for db_instance in var.db_instances : db_instance.name => db_instance}
+   name             = each.value.name
+   region           = each.value.region
+   database_version = each.value.database_version
+
+   settings {
+    tier = each.value.tier
+   }
+
+   deletion_protection  = each.value.deletion_protection
+}
+
+// resource "google_sql_database" "databases" {
+//    for_each = {for database in databases : database.name => database}
+//    name     = each.value.name
+//    instance = each.value.instance
+// }
+
 // resource "google_compute_instance" "vm_instances" {
 //    for_each = {for vm_instance in var.vm_instances : vm_instance.machine_type=> vm_instance}
 //    name         = each.value.name
