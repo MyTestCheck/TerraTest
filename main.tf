@@ -33,7 +33,7 @@ resource "google_sql_database_instance" "db_instances" {
 }
 
 resource "google_sql_database" "databases" {
-   for_each = {for database in databases : database.name => database}
+   for_each = {for database in var.databases : database.name => database}
    name     = each.value.name
    instance = each.value.instance
 }
