@@ -1,14 +1,10 @@
-project_id = "terratest-328102"
+project_id = "sunny-terraform"
 region     = "europe-west2"
 
 # Use the below code to create buckets
 buckets = [
     {
         name = "bucktestone1"
-        location = "us"
-    },
-    {
-        name = "bucktesttwo2"
         location = "us"
     }
 ]
@@ -18,27 +14,12 @@ datasets = [
     {
         dataset_id= "dataset11"
         description = "This is description"
-    },
-    {
-        dataset_id= "dataset12"
-        description = "This is description"
-    },
-    {
-        dataset_id= "dataset13"
-        description = "This is description"
-    },
-    {
-        dataset_id= "dataset14"
-        description = "This is description"
     }
 ]
 
 # Use the below code to create tables
 tables = [
-    {
-        dataset_id = "dataset11"
-        table_id   = "table11"
-    }
+    
 ]
 
 # Use the below code to create db instances
