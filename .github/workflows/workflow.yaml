@@ -6,7 +6,6 @@ on:
     - main
     - dev
     - test/*
-  pull_request:
 
 jobs:
   terraform:
