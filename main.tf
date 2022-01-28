@@ -27,14 +27,6 @@ resource "google_sql_database_instance" "db_instances" {
 
    settings {
     tier = each.value.tier
-    maintenance_window {
-      day  = "1"
-      hour = "4"
-    }
-    backup_configuration {
-      enabled = true
-      start_time = "04:30"
-    } 
    }
 
    deletion_protection  = each.value.deletion_protection
