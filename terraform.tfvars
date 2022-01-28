@@ -31,7 +31,7 @@ tables = [
 
 # Use the below code to create db instances
 
-db_instance = [
+db_instances = [
     {
         name = "pgtestone"
         region = "us-central1"
