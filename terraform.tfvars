@@ -28,6 +28,11 @@ tables = [
 # Use the below code to create db instances
 
 db_instance = [
+    name = "my-database-instance"
+    region = "us-central1"
+    database_version = "POSTGRES_12"
+    tier  = "db-custom-2-7680"
+    deletion_protection  = "true"
     
 ]
 
@@ -37,8 +42,8 @@ db_instance = [
 //     {
 //         name = "my-database-instance"
 //         region = "us-central1"
-//         database_version = "MYSQL_5_7"
-//         tier  = "db-f1-micro"
+//         database_version = "POSTGRES_12"
+//         tier  = "db-custom-2-7680"
 //         deletion_protection  = "true"
 //     }
 // ]
