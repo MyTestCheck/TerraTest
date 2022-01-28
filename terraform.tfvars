@@ -33,7 +33,7 @@ tables = [
 
 db_instances = [
     {
-        name = "pgtesttwo"
+        name = "pgtestone"
         region = "us-central1"
         database_version = "POSTGRES_12"
         tier  = "db-f1-micro"
