@@ -41,8 +41,6 @@ variable "db_instances" {
     region = string
     database_version = string
     tier = string
-    day = string
-    hour = string
     deletion_protection = string
   }))
   default = []
