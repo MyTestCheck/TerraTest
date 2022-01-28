@@ -27,10 +27,6 @@ resource "google_sql_database_instance" "db_instances" {
 
    settings {
     tier = each.value.tier
-    maintenance_window {
-      day  = each.value.day
-      hour = each.value.hour
-    }
    }
 
    deletion_protection  = each.value.deletion_protection
