@@ -32,15 +32,15 @@ tables = [
 # Use the below code to create db instances
 
 db_instances = [
-    {
-        name = "pgtesttwo"
-        region = "us-central1"
-        database_version = "POSTGRES_12"
-        tier  = "db-f1-micro"
-        day = "1"
-        hour = "4"
-        deletion_protection  = "true"
-    }
+#     {
+#         name = "pgtesttwo"
+#         region = "us-central1"
+#         database_version = "POSTGRES_12"
+#         tier  = "db-f1-micro"
+#         day = "1"
+#         hour = "4"
+#         deletion_protection  = "true"
+#     }
 ]
 
 # Refer example below
