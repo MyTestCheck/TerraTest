@@ -28,7 +28,7 @@ resource "google_sql_database_instance" "db_instances" {
    settings {
     tier = each.value.tier
     maintenance_window {
-      day  = each.value.name
+      day  = each.value.day
       hour = each.value.hour
     }
    }
