@@ -33,10 +33,10 @@ tables = [
 
 db_instances = [
     {
-        name = "pgtestone"
+        name = "pgtesttwo"
         region = "us-central1"
         database_version = "POSTGRES_12"
-        tier  = "db-custom-2-7680"
+        tier  = "db-f1-micro"
         deletion_protection  = "true"
     }
 ]
@@ -48,7 +48,7 @@ db_instances = [
 //         name = "my-database-instance"
 //         region = "us-central1"
 //         database_version = "POSTGRES_12"
-//         tier  = "db-custom-2-7680"
+//         tier  = "db-f1-micro"
 //         deletion_protection  = "true"
 //     }
 // ]
