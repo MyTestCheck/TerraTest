@@ -37,6 +37,8 @@ db_instances = [
         region = "us-central1"
         database_version = "POSTGRES_12"
         tier  = "db-f1-micro"
+        day = "1"
+        hour = "4"
         deletion_protection  = "true"
     }
 ]
