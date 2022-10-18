@@ -19,10 +19,10 @@ datasets = [
 
 # Use the below code to create tables
 tables = [
-    {
-        table_id = "table11"
-        dataset_id= "dataset11"
-    }
+#     {
+#         table_id = "table11"
+#         dataset_id= "dataset11"
+#     }
 ]
 
 # Use the below code to create db instances
