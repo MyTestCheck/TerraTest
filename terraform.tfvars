@@ -1,6 +1,7 @@
 project_id = "terraform-only"
 region     = "europe-west2"
 
+
 # Use the below code to create buckets
 buckets = [
     {
