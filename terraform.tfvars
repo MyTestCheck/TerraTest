@@ -1,14 +1,10 @@
-project_id = "sunny-terraform"
+project_id = "terraform-only"
 region     = "europe-west2"
 
 # Use the below code to create buckets
 buckets = [
     {
-        name = "bucket-sun-60"
-        location = "us"
-    },
-    {
-        name = "bucket-sun-61"
+        name = "bucket-testone-60"
         location = "us"
     }
 ]
@@ -32,26 +28,26 @@ tables = [
 # Use the below code to create db instances
 
 db_instances = [
-    {
-        name = "pgtestone"
-        region = "us-central1"
-        database_version = "POSTGRES_12"
-        tier  = "db-f1-micro"
-        deletion_protection  = "true"
-    }
+#     {
+#         name = "pgtestone"
+#         region = "us-central1"
+#         database_version = "POSTGRES_12"
+#         tier  = "db-f1-micro"
+#         deletion_protection  = "true"
+#     }
 ]
 
 # Refer example below
 
-// db_instances = [
-//     {
-//         name = "my-database-instance"
-//         region = "us-central1"
-//         database_version = "POSTGRES_12"
-//         tier  = "db-f1-micro"
-//         deletion_protection  = "true"
-//     }
-// ]
+# db_instances = [
+#      {
+#          name = "my-database-instance"
+#          region = "us-central1"
+#          database_version = "POSTGRES_12"
+#          tier  = "db-f1-micro"
+#          deletion_protection  = "true"
+#      }
+#  ]
 
 # Use the below code to create database in any instance
 
@@ -61,12 +57,12 @@ databases = [
 
 # Refer example below
 
-// databases = [
-//     {
-//         name     = "my-database"
-//         instance = "my-database-instance"
-//     }
-// ]
+# databases = [
+#      {
+#          name     = "my-database"
+#          instance = "my-database-instance"
+#      }
+#  ]
 
 # Use the below code to create VMs
 
@@ -76,12 +72,12 @@ vm_instance = [
 
 # Refer example below
 
-// vm_instances = [ 
-//     {
-//         name = "testsun"
-//         machine_type = "e2-medium"
-//         zone = "us-central1-a"
-//         image = "debian-cloud/debian-9"
-//         network = "default"
-//     }
-// ]
+#  vm_instances = [ 
+#      {
+#          name = "testsun"
+#          machine_type = "e2-medium"
+#          zone = "us-central1-a"
+#          image = "debian-cloud/debian-9"
+#          network = "default"
+#      }
+#  ]
