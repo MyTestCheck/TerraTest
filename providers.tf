@@ -5,7 +5,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket = "terraform-statefile-60"
+    bucket = "state-bucket-60"
     prefix = "terraform/state"
   }
 }
