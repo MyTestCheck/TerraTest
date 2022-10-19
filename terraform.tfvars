@@ -5,7 +5,7 @@ region     = "europe-west2"
 # Use the below code to create buckets
 buckets = [
     {
-        name = "bucket-testone-60"
+        name = "bucket-testone-66"
         location = "us"
     }
 ]
@@ -13,7 +13,7 @@ buckets = [
 # Use the below code to create datasets
 datasets = [
     {
-        dataset_id= "dataset11"
+        dataset_id= "dataset16"
         description = "This is description"
     }
 ]
