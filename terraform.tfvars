@@ -4,10 +4,10 @@ region     = "europe-west2"
 
 # Use the below code to create buckets
 buckets = [
-    {
-        name = "bucket-testone-66"
-        location = "us"
-    }
+#     {
+#         name = "bucket-testone-66"
+#         location = "us"
+#     }
 ]
 
 # Use the below code to create datasets
