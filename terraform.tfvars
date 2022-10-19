@@ -29,13 +29,13 @@ tables = [
 # Use the below code to create db instances
 
 db_instances = [
-    {
-        name = "pgstestone"
-        region = "us-central1"
-        database_version = "POSTGRES_12"
-        tier  = "db-f1-micro"
-        deletion_protection  = "true"
-    }
+#     {
+#         name = "pgstestone"
+#         region = "us-central1"
+#         database_version = "POSTGRES_12"
+#         tier  = "db-f1-micro"
+#         deletion_protection  = "true"
+#     }
 ]
 
 
