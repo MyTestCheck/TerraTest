@@ -27,6 +27,12 @@ resource "google_sql_database_instance" "db_instances" {
 
    settings {
     tier = each.value.tier
+     
+    database_flags {
+      name  = "cloudsql.iam_authentication"
+      value = "on"
+    }
+     
     maintenance_window {
       day  = "1"
       hour = "4"
@@ -40,6 +46,13 @@ resource "google_sql_database" "databases" {
    for_each = {for database in var.databases : database.name => database}
    name     = each.value.name
    instance = each.value.instance
+}
+  
+resource "google_sql_user" "users" {
+  for_each = {for user in var.users : user.name => user}
+  name     = each.value.name
+  instance = each.value.instance
+  type     = "CLOUD_IAM_USER"
 }
 
 resource "google_compute_instance" "vm_instances" {

@@ -1,6 +1,7 @@
 project_id = "terraform-only"
 region     = "europe-west2"
 
+
 # Use the below code to create buckets
 buckets = [
     {
@@ -28,14 +29,15 @@ tables = [
 # Use the below code to create db instances
 
 db_instances = [
-#     {
-#         name = "pgtestone"
-#         region = "us-central1"
-#         database_version = "POSTGRES_12"
-#         tier  = "db-f1-micro"
-#         deletion_protection  = "true"
-#     }
+    {
+        name = "pgstestone"
+        region = "us-central1"
+        database_version = "POSTGRES_12"
+        tier  = "db-f1-micro"
+        deletion_protection  = "true"
+    }
 ]
+
 
 # Refer example below
 
@@ -63,6 +65,14 @@ databases = [
 #          instance = "my-database-instance"
 #      }
 #  ]
+
+
+# users = [
+#     {
+#         name   = "test8149833010@gmail.com"
+#         instance = "my-database-instance"
+#     }
+# ]
 
 # Use the below code to create VMs
 
